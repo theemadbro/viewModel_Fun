@@ -1,0 +1,9 @@
+@model List<User>
+<h3>Here be some users!</h3>
+
+@{
+    for (var i=0; i<@Model.Count; i++)
+    {
+        <p>@Model[i].fname @Model[i].lname</p>
+    }
+}
